@@ -4,6 +4,7 @@
 
 ## Overview
 
+#### Cancer Detection is perhaps the simplest ML projects. I have built this small project for just a simple Overview of ML techniques.
 This project aims to develop a machine learning model for detecting cancer using a synthetic dataset. The dataset contains 100,000 samples with various features that are correlated with the presence of cancer. The primary goal is to achieve high accuracy in cancer detection through effective data preprocessing, model training, and evaluation.
 
 ## Dataset
