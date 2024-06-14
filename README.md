@@ -44,7 +44,7 @@ A Random Forest classifier is used to train the model, chosen for its robustness
 
 The ROC curve demonstrates the model's excellent discriminative ability with an AUC of 0.99.
 
-![ROC Curve](roc_curve.png)
+![ROC Curve](ROC_Curve.jpg)
 
 ## Usage
 
