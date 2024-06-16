@@ -1,3 +1,4 @@
+# Importing Libraries
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
@@ -9,10 +10,11 @@ import matplotlib.pyplot as plt
 # Seed for reproducibility
 np.random.seed(42)
 
-# Number of samples
+# Number of samples (1 million sample data for high accuracy of model testing & prediction)
 num_samples = 100000
 
-# Generate synthetic data with stronger correlations
+# Generate synthetic data with stronger correlations (real data wasn't easly available, so generated synthetically)
+
 age = np.random.randint(20, 80, size=num_samples)
 tumor_size = np.random.uniform(0.1, 10.0, size=num_samples)
 genetic_marker_1 = np.random.choice([0, 1], size=num_samples, p=[0.7, 0.3])
@@ -23,12 +25,13 @@ genetic_marker_5 = np.random.choice([0, 1], size=num_samples, p=[0.3, 0.7])
 family_history = np.random.choice([0, 1], size=num_samples, p=[0.7, 0.3])
 
 # Target variable with stronger correlation
+
 cancer = (0.3*genetic_marker_1 + 0.4*genetic_marker_2 + 0.5*genetic_marker_3 +
           0.6*genetic_marker_4 + 0.7*genetic_marker_5 + 0.8*family_history +
           np.random.normal(0, 0.1, size=num_samples)) > 1.5
 cancer = cancer.astype(int)
 
-# Create DataFrame
+# Create DataFrame from dictionary 
 df = pd.DataFrame({
     'age': age,
     'tumor_size': tumor_size,
