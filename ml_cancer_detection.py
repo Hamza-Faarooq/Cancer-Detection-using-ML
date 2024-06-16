@@ -13,7 +13,7 @@ np.random.seed(42)
 # Number of samples (1 million sample data for high accuracy of model testing & prediction)
 num_samples = 100000
 
-# Generate synthetic data with stronger correlations (real data wasn't easly available, so generated synthetically)
+# Generate synthetic data with stronger correlations (real data wasn't easily available, so generated synthetically)
 
 age = np.random.randint(20, 80, size=num_samples)
 tumor_size = np.random.uniform(0.1, 10.0, size=num_samples)
